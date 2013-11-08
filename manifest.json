@@ -1,0 +1,65 @@
+{
+  "id": "csv2idb",
+  "output": "application/json",
+  "title": {
+    "fr": "Crée une base de données IndexedDB à partir d'un tableau CVS",
+    "en": "Create an IndexedDB from CSV data"
+  },
+  "description": {
+    "fr" : "",
+    "en" : ""
+  },
+  "parameters" : {
+    "keypath": {
+      "alias": "kp",
+      "type": "text",
+      "required": false,
+      "default": "id",
+      "size": "medium",
+      "pattern": "^[a-zA-Z0-9][a-zA-Z0-9_]*$",
+      "maxlength": "",
+      "label": {
+        "fr": "Nom de clé unique",
+        "en": "Unique key"
+      },
+      "help": {
+        "en": "Column name representing the unique identifier of each row.",
+        "fr": "Nom de la colonne représentant l'identifiant unique de chaque ligne."
+      }
+    },
+    "title" : {
+      "alias": "t",
+      "type": "boolean",
+      "required": false,
+      "default": true,
+      "size": "",
+      "pattern": "",
+      "maxlength": "",
+      "label": {
+        "fr": "Ligne de titres",
+        "en": "Titles line"
+      },
+      "help": {
+        "en": "First line contains the columns titles.",
+        "fr": "Considérer que la premmière ligne contient les titres des colonnes."
+      }
+    },
+    "delimiter": {
+      "alias": "d",
+      "type": "text",
+      "required": false,
+      "default": ";\n",
+      "size": "small",
+      "pattern": "",
+      "maxlength": "",
+      "label": {
+        "fr": "Delimiteur",
+        "en": "Delimiter"
+      },
+      "help": {
+        "fr": "Un ou plusieurs caractères séparant des portions de texte, typiquement une ligne de texte se finissant par [un caractère de fin de ligne](https://fr.wikipedia.org/wiki/Fin_de_ligne).",
+        "en": "A special character or sequence of characters signifying the end of a of text segment. For example [newline](https://en.wikipedia.org/wiki/Newline)"
+      }
+    }
+  }
+}
